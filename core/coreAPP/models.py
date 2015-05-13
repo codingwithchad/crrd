@@ -28,6 +28,8 @@ class UseItems(models.Model):
 class BusItem(models.Model):
     businesses = models.ForeignKey('coreAPP.Business')
     items = models.ForeignKey(UseItems)
+    def __str__(self):
+        return self.businesses.busName + "-" + self.items.itemName
 
 class Business(models.Model):
     busName = models.CharField(max_length=200)
