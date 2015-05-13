@@ -13,7 +13,7 @@ from django.utils import timezone
 class UseCat(models.Model):
     catName = models.CharField(max_length=200)
 #    adminID = models.ForeignKey(Admin)
-    lastUpdate = models.DateTimeField('date updated', blank=True)
+    lastUpdate = models.DateTimeField('date updated', auto_now=True, blank=True)
     def __str__(self):
         return self.catName
 
@@ -21,7 +21,7 @@ class UseItems(models.Model):
     itemCat = models.ForeignKey(UseCat)
     itemName = models.CharField(max_length=200)
 #    adminID = models.ForeignKey(Admin)
-    lastUpdate = models.DateTimeField('last updated', blank=True)
+    lastUpdate = models.DateTimeField('last updated', auto_now=True, blank=True)
     def __str__(self):
         return self.itemName
 
@@ -44,7 +44,7 @@ class Business(models.Model):
     geolocal =  models.CharField(max_length=200, blank=True)
     hours =  models.CharField(max_length=200, blank=True)
 #    adminID = models.ForeignKey(Admin)
-    lastUpdate = models.DateTimeField('last updated', blank=True, null=True)
+    lastUpdate = models.DateTimeField('last updated', auto_now=True, blank=True, null=True)
     def __str__(self):
         return self.busName
 
