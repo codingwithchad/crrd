@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import UseCat, UseItems
+from .models import UseCat, UseItems, BusItem, Business, RepCat
 
 
 class ItemsInline(admin.TabularInline):
@@ -19,5 +19,8 @@ class UseCatAdmin(admin.ModelAdmin):
 	
 # Register your models here.
 admin.site.register(UseCat, UseCatAdmin)
+admin.site.register(BusItem)
+admin.site.register(Business)
+admin.site.register(RepCat)
 
 
