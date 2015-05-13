@@ -3,16 +3,16 @@ from django.db import models
 from django.utils import timezone
 
 
-class Admin(models.Model):
-    userName = models.CharField(max_length=200)
-    password = models.CharField(max_length=200)
-    permissions = models.CharField(max_length=200)
-    def __str__(self):
-        return self.userName
+#class Admin(models.Model):
+#    userName = models.CharField(max_length=200)
+#    password = models.CharField(max_length=200)
+#    permissions = models.CharField(max_length=200)
+#    def __str__(self):
+#        return self.userName
 
 class UseCat(models.Model):
     catName = models.CharField(max_length=200)
-    adminID = models.ForeignKey(Admin)
+#    adminID = models.ForeignKey(Admin)
     lastUpdate = models.DateTimeField('date updated')
     def __str__(self):
         return self.catName
@@ -20,7 +20,7 @@ class UseCat(models.Model):
 class UseItems(models.Model):
     itemCat = models.ForeignKey(UseCat)
     itemName = models.CharField(max_length=200)
-    adminID = models.ForeignKey(Admin)
+#    adminID = models.ForeignKey(Admin)
     lastUpdate = models.DateTimeField('last updated')
     def __str__(self):
         return self.itemName
@@ -43,14 +43,14 @@ class Business(models.Model):
     web =  models.URLField(max_length=200)
     geolocal =  models.CharField(max_length=200)
     hours =  models.CharField(max_length=200)
-    adminID = models.ForeignKey(Admin)
+#    adminID = models.ForeignKey(Admin)
     lastUpdate = models.DateTimeField('last updated')
     def __str__(self):
         return self.busName
 
 class RepCat(models.Model):
     repName = models.CharField(max_length=200)
-    adminID = models.ForeignKey(Admin)
+#    adminID = models.ForeignKey(Admin)
     def __str__(self):
         return self.repName
 
