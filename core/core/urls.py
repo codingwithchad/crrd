@@ -8,3 +8,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
 ]
+
+# set the header of the Admin page
+admin.site.site_header = 'Corvallis Reuse and Repair Directory'
