@@ -1,0 +1,44 @@
+********************************************************************************
+INPUT: Try to create a business without specifying a business name (submit null string)
+EXPECTED: Interface will prevent the business from being created and will tell you that a name is required.
+OUTPUT: same as EXPECTED.
+
+********************************************************************************
+INPUT: Create a new Use Category (Use Cat)
+EXPECTED: The Use Category Admin page will have the Use Category you just created and it will show a Date Updated field that reflects the Date and time you created the Use Category (in Pacific Time).
+OUTPUT: same as EXPECTED.
+
+********************************************************************************
+INPUT: Make a change to the Use Category you just created.
+EXPECTED: That Use Category's Date Updated field now shows a time that reflected when you last made a change to it (in Pacific Time).
+OUTPUT: same as EXPECTED.
+
+********************************************************************************
+INPUT: Create a BusItem.
+EXPECTED: A BusItem will appear in the BusItem admin page with a name of the form "chosenBusiness-chosenItem".
+OUTPUT: same as EXPECTED.
+
+********************************************************************************
+INPUT: Create another BusItem with the same attributes as the one you just made.
+EXPECTED: You should be prevented from making a duplicate entry and should be told as such
+OUTPUT: Duplicate entry was allowed to be made.
+
+********************************************************************************
+INPUT: Delete a BusItem (a business-item relationship).
+EXPECTED: The BusItem disappears from the list of BusItems. The business and the item that were used in the BusItem still exist.
+OUTPUT: same as EXPECTED.
+
+********************************************************************************
+INPUT: 
+EXPECTED: 
+OUTPUT: same as EXPECTED.
+
+********************************************************************************
+INPUT: 
+EXPECTED: 
+OUTPUT: same as EXPECTED.
+
+********************************************************************************
+INPUT: 
+EXPECTED: 
+OUTPUT: same as EXPECTED.
