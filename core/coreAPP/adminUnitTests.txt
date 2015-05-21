@@ -4,6 +4,26 @@ EXPECTED: Interface will prevent the business from being created and will tell y
 OUTPUT: same as EXPECTED.
 
 ********************************************************************************
+INPUT: Create a business and put "asdf" or some other garbage in for Zipcode, Email, and Web.
+EXPECTED: It should not create the business and complain that the values in all of those fields is invalid.
+OUTPUT: same as EXPECTED.
+
+********************************************************************************
+INPUT: Create two businesses that have the exact same name
+EXPECTED: The second business should be rejected because it doesn't have a unique name
+OUTPUT: The creation of the business with the duplicate name was allowed.
+
+********************************************************************************
+INPUT: Create two use cats that have the exact same name
+EXPECTED: The second use cat should be rejected because it doesn't have a unique name
+OUTPUT: The creation of the use cat with the duplicate name was allowed.
+
+********************************************************************************
+INPUT: Create two rep cats that have the exact same name
+EXPECTED: The second rep cat should be rejected because it doesn't have a unique name
+OUTPUT: The creation of the rep cat with the duplicate name was allowed.
+
+********************************************************************************
 INPUT: Create a new Use Category (Use Cat)
 EXPECTED: The Use Category Admin page will have the Use Category you just created and it will show a Date Updated field that reflects the Date and time you created the Use Category (in Pacific Time).
 OUTPUT: same as EXPECTED.
@@ -29,16 +49,11 @@ EXPECTED: The BusItem disappears from the list of BusItems. The business and the
 OUTPUT: same as EXPECTED.
 
 ********************************************************************************
-INPUT: 
-EXPECTED: 
+INPUT: Create a BusItem that has the same business as another BusItem but a unique item.
+EXPECTED: Creation be allowed; no conflict.
 OUTPUT: same as EXPECTED.
 
 ********************************************************************************
-INPUT: 
-EXPECTED: 
-OUTPUT: same as EXPECTED.
-
-********************************************************************************
-INPUT: 
-EXPECTED: 
-OUTPUT: same as EXPECTED.
+INPUT: Create use cat "Children's Goods" with "Clothes" as an item.  Create "Wearable Items" with "Clothes" as an item.  Check what options for "Item" when you create a BusItem.
+EXPECTED: "Clothes" should appear twice but you should be able to tell which categories they come from.
+OUTPUT: "Clothes" appears twice but it's impossible to tell which categories they come from.
