@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import UseCat, UseItem, BusItem, Business, RepCat, RepItem, BusRepItem
+from django.contrib.contenttypes.admin import GenericTabularInline
 
 #Allows 4 text boxes to be displayed by default while adding items in Use Cat
 #more can be inserted within the browser
@@ -29,22 +30,13 @@ class RepCatAdmin(admin.ModelAdmin):
 	inlines = [RepItemInline]
 	list_display = ('repName', 'lastUpdate')
 
-class BusinessToItemsInline(admin.TabularInline):
-	model = UseItem
 
-class BusItemAdmin(admin.ModelAdmin):
-	inlines=[BusinessToItemsInline,]
-	
-
-	
-	
 	
 # Register your models here.
 admin.site.register(UseCat, UseCatAdmin)
-admin.site.register(Business)
-#admin.site.register(UseItem)
+admin.site.register(UseItem)
 admin.site.register(RepCat, RepCatAdmin)
 admin.site.register(RepItem)
 admin.site.register(BusItem)
-admin.site.register(UseItem, BusItemAdmin)
+admin.site.register(Business)
 
