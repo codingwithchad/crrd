@@ -1,11 +1,11 @@
 from django.contrib import admin
-from .models import UseCat, UseItem, BusItem, Business, RepCat, RepItem, BusRepItem
-from django.contrib.contenttypes.admin import GenericTabularInline
+from .models import UseCat, ReuseItem, BusItem, Business, RepCat, RepairItem, BusinessRepairItem
+#from django.contrib.contenttypes.admin import GenericTabularInline
 
 #Allows 4 text boxes to be displayed by default while adding items in Use Cat
 #more can be inserted within the browser
-class UseItemInline(admin.TabularInline):
-	model = UseItem
+class ReuseItemInline(admin.TabularInline):
+	model = ReuseItem
 	extra = 4
 #This allows the UseCat for the admin page
 #Category Name is on top and 4 text boxes for Item names are underneath
@@ -15,11 +15,11 @@ class UseCatAdmin(admin.ModelAdmin):
 	(None, {'fields': ['catName']}),
 	('Date information', {'fields':['lastUpdate']}),
 	]
-	inlines = [UseItemInline]
+	inlines = [ReuseItemInline]
 	list_display = ('catName', 'lastUpdate')
 	
-class RepItemInline(admin.TabularInline):
-	model = RepItem
+class RepairItemInline(admin.TabularInline):
+	model = RepairItem
 	extra = 4
 
 class RepCatAdmin(admin.ModelAdmin):
@@ -27,16 +27,17 @@ class RepCatAdmin(admin.ModelAdmin):
 	(None, {'fields': ['repName']}),
 	('Date information', {'fields':['lastUpdate']}),
 	]
-	inlines = [RepItemInline]
+	inlines = [RepairItemInline]
 	list_display = ('repName', 'lastUpdate')
 
 
 	
 # Register your models here.
 admin.site.register(UseCat, UseCatAdmin)
-admin.site.register(UseItem)
+admin.site.register(ReuseItem)
 admin.site.register(RepCat, RepCatAdmin)
-admin.site.register(RepItem)
+admin.site.register(RepairItem)
 admin.site.register(BusItem)
 admin.site.register(Business)
+admin.site.register(BusinessRepairItem)
 
