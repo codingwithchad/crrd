@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Corvallis Reuse and Repair Directory</string>
+    <string name="title_activity_reuse_cat">Reuse Categories</string>
+    <string name="title_activity_reuse_item">Reuse Items</string>
+    <string name="title_activity_reuse_biz">Reuse Businesses</string>
+    <string name="title_activity_reuse_biz_detail">Reuse Business Details</string>
+    <string name="title_activity_repair_cat">Repair Categories</string>
+    <string name="title_activity_repair_biz">Repair Businesses</string>
+    <string name="title_activity_repair_biz_detail">Repair Business Details</string>
+
+    <string name="button_reuse">Reuse</string>
+    <string name="button_repair">Repair</string>
+
+    <string name="header_curbside">Curbside Recycling Information</string>
+    <string name="header_depot">Depot Recycling Information</string>
+    <string name="header_map">Map</string>
+    <string name="header_hours">Hours</string>
+    <string name="header_phone">Phone</string>
+    <string name="header_website">Website</string>
+
+    <string name="link_curbside">http://site.republicservices.com/site/corvallis-or/en/documents/detailedrecyclingguide.pdf</string>
+    <string name="link_depot">http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycledepot.pdf</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

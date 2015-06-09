@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cs419_group18.corvallisreuseandrepairdirectory" >
+
+    <!-- NEED TO ADD TO BE ABLE TO GO ONLINE AND GET DATA -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReuseCatActivity"
+            android:label="@string/title_activity_reuse_cat"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cs419_group18.corvallisreuseandrepairdirectory.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ReuseItemActivity"
+            android:label="@string/title_activity_reuse_item"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ReuseCatActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cs419_group18.corvallisreuseandrepairdirectory.ReuseCatActivity" />
+        </activity>
+        <activity
+            android:name=".ReuseBizActivity"
+            android:label="@string/title_activity_reuse_biz"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ReuseItemActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cs419_group18.corvallisreuseandrepairdirectory.ReuseItemActivity" />
+        </activity>
+        <activity
+            android:name=".ReuseBizDetailActivity"
+            android:label="@string/title_activity_reuse_biz_detail"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ReuseBizActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cs419_group18.corvallisreuseandrepairdirectory.ReuseBizActivity" />
+        </activity>
+        <activity
+            android:name=".RepairCatActivity"
+            android:label="@string/title_activity_repair_cat"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cs419_group18.corvallisreuseandrepairdirectory.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RepairBizActivity"
+            android:label="@string/title_activity_repair_biz"
+            android:launchMode="singleTop"
+            android:parentActivityName=".RepairCatActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cs419_group18.corvallisreuseandrepairdirectory.RepairCatActivity" />
+        </activity>
+        <activity
+            android:name=".RepairBizDetailActivity"
+            android:label="@string/title_activity_repair_biz_detail"
+            android:launchMode="singleTop"
+            android:parentActivityName=".RepairBizActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cs419_group18.corvallisreuseandrepairdirectory.RepairBizActivity" />
+        </activity>
+    </application>
+
+</manifest>
