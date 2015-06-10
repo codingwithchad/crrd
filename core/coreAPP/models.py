@@ -61,7 +61,7 @@ class BusItem(models.Model):
     items = models.ForeignKey(ReuseItem)
     lastUpdate = models.DateTimeField('last updated', auto_now=True, blank=True)
     def __str__(self):
-        return self.businesses.busName + "-" + self.ReuseItem.itemName
+        return self.businesses.busName + "-" + self.items.itemName
     class Meta:
         verbose_name = "Reuse Business Item"
         verbose_name_plural = "Reuse Business Items"

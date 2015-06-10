@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import datetime
+import json
+from django.core import serializers
 from .models import UseCat, ReuseItem, BusItem, Business, RepCat, RepairItem, BusinessRepairItem
 
 def index(request):
@@ -9,24 +11,24 @@ def index(request):
     return HttpResponse(html)
 
 def viewUseCat(request):
-    allCategories = UseCat.objects.all()
-    output = ','.join([str(x.id) for x in allCategories])
-    return HttpResponse(output)
+    data = serializers.serialize('json', UseCat.objects.all(), fields =('id', 'catName'))
+   
+    return HttpResponse(data)
 
 def viewUseItems(request, catID):
-    showItems = ReuseItem.objects.order_by('itemName')
-    response = ""
-    for x in showItems:
-        
-        #return HttpResponse("Double Winner")
-        response = ','.join("X")
-        response = ','.join([x.itemName])
-        response = ','.join([catID])
-        response = ','.join([x.itemCat])
-    #response = "List all the items whos parent is %s " % catID
+    #showItems = ReuseItem.objects.filter(itemCat_id=catID)
+    response = serializers.serialize('json', ReuseItem.objects.filter(itemCat_id=catID), fields =('id', 'itemName'))
+   
     return HttpResponse(response)
 
 def viewBusiness(request, itemID):
-    return HttpResponse("list all business that accept items in  %s" % itemID)
+    thisBus = BusItem.objects.filter(items_id=itemID)
+    for x in thisBus:
+        response = serializers.serialize('json', Business.objects.filter(id=x.id))
+
+   
+    #response = serializers.serialize('json', BusItem.objects.filter(items_id=itemID), fields =('business_id'))
+
+    return HttpResponse(response)
 
 # Create your views here.
