@@ -31,6 +31,7 @@ class RepCatAdmin(admin.ModelAdmin):
 	list_display = ('repName', 'lastUpdate')
 
 
+
 	
 # Register your models here.
 admin.site.register(UseCat, UseCatAdmin)
