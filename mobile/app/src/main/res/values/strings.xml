@@ -22,5 +22,7 @@
     <string name="link_depot">http://site.republicservices.com/site/corvallis-or/en/documents/corvallisrecycledepot.pdf</string>
 
     <string name="action_settings">Settings</string>
+    <string name="hello_world">Help! I\'m trapped in a universe factory!</string>
+    <string name="title_activity_reuse_map">ReuseMapActivity</string>
 
 </resources>

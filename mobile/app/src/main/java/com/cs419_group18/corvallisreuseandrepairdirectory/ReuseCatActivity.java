@@ -24,10 +24,11 @@ import java.util.ArrayList;
 
 public class ReuseCatActivity extends ActionBarActivity implements AdapterView.OnItemClickListener {
     Intent intent;
-    private static final String BASE_URL = "http://heroic-district-93919.appspot.com";
+    private static final String BASE_URL = "http://52.26.111.76:8000/crrd/";
     AsyncHttpClient client = new AsyncHttpClient();
     ListView itemListView;
     static ArrayList<String> itemList;
+    static ArrayList<String> itemIDs;
     static ArrayAdapter itemAdapter;
     ProgressDialog progDialog;
 
@@ -39,7 +40,8 @@ public class ReuseCatActivity extends ActionBarActivity implements AdapterView.O
         // set up the arrayList and adapter that will populate the item ListView
         itemListView = (ListView) findViewById(R.id.listview_reuseCat);
         itemList = new ArrayList<>();
-        itemAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, itemList);
+        itemIDs = new ArrayList<>();
+        itemAdapter = new ArrayAdapter(this, R.layout.crrd_list_item, itemList);
         itemListView.setAdapter(itemAdapter);
         itemListView.setOnItemClickListener(this);
 
@@ -50,15 +52,17 @@ public class ReuseCatActivity extends ActionBarActivity implements AdapterView.O
         progDialog.show();
 
         // perform GET to do initial fill of the item listview
-        client.get(BASE_URL + "/item?user_id=" + user_id + "&password=" + password, new JsonHttpResponseHandler() {
+        client.get(BASE_URL + "usecat/", new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 progDialog.dismiss();
-                JSONObject item;
+                JSONObject item, fields;
                 for (int i = 0; i < response.length(); ++i) {
                     try {
                         item = response.getJSONObject(i);
-                        itemList.add(item.getString("name"));
+                        fields = item.getJSONObject("fields");
+                        itemList.add(fields.getString("catName"));
+                        itemIDs.add(item.getString("pk"));
                     } catch (Exception ex) {
                         Log.d("jh json exception", ex.getMessage());
                     }
@@ -98,8 +102,8 @@ public class ReuseCatActivity extends ActionBarActivity implements AdapterView.O
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        intent = new Intent(this, ReuseSubCatActivity.class);
-        intent.putExtra("name", itemList.get(position));
+        intent = new Intent(this, ReuseItemActivity.class);
+        intent.putExtra("pk", itemIDs.get(position));
         startActivity(intent);
     }
 }

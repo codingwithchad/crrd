@@ -1,6 +1,5 @@
 package com.cs419_group18.corvallisreuseandrepairdirectory;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -46,7 +45,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void goToRepairDir(View view) {
-        intent = new Intent(this, LoginActivity.class);
+        intent = new Intent(this, RepairCatActivity.class);
         startActivity(intent);
     }
 }

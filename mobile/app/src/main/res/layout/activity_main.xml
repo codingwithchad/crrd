@@ -45,6 +45,7 @@
     <TextView
         android:text="@string/link_curbside"
         android:autoLink="web"
+        style="@style/linkColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/curbsideLink"
@@ -61,6 +62,7 @@
     <TextView
         android:text="@string/link_depot"
         android:autoLink="web"
+        style="@style/linkColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/depotLink"

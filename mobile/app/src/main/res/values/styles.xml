@@ -11,10 +11,33 @@
     <style name="textColor">
         <item name="android:textColor">#FFFFFD</item>
     </style>
+    <style name="linkColor">
+        <item name="android:textColorLink">#9999F8</item>
+    </style>
     <style name="buttonColor">
         <item name="android:background">#EBEBEB</item>
         <item name="android:textColor">#468C81</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="listView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:divider">#D3ECE9</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="headerText">
+        <item name="android:textColor">#D3ECE9</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
     </style>
 
     <style name="divider">
@@ -23,7 +46,7 @@
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">20dp</item>
-        <item name="android:background">#FFFFFD</item>
+        <item name="android:background">#D3ECE9</item>
     </style>
 
 </resources>

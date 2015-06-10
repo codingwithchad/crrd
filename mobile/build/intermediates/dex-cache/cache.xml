@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-273ba60bf427f93dbd1b2829cd9f6b87b430029b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-648623e073bb4ae482150600f3ea284248968733.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-d3ee98f3411b9e497d520e97deb37ce64c3f557d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-eac4cf1792927caa7c799c89f6a704a34fad0fd9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-b8ab36af87ec5c9df09b163746bb6966e66f7ea3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-137fc776cd686086990572078f34f388f0371cc9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-89a6401c05eebfded99c2df4c3366a8e0d95d037.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-e078808d18aaaeccfadef6e8c72da16d695afc98.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-9819c9975ce558e115fb4b6bcc0f4f35ea59577d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-b6281686c68b694f3a8a5985fc57e74b685d3ea3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-69989560a53126e044cfbcdb789acdb41b95ff70.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-095e82bcfb17430a3bedec956f3aba8f78a4a771.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-4fe8c7dc2bc2948b15e6bddd68e102828a9cbf26.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-68cf587b2bf818937990f6a5d399410d45265084.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-3f4d64db63af473dc9296b1e6373f84a2f5abe51.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-fab1db4eb5a80f8ceeaaa83995337e97a6f42ec8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-961f22e5b76e739743816a28fdceffc07003aff1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-0a365b969d63642d2ff126ebfd49d88ef821b41e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-9b569b37ecdf1c3d10b09d5e6b0ef34110351742.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-cde3b264c31da1391a6696c8e61de9b24e20b338.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-d41762e224f6041823dbddd0024676dedfded7b6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-1796b9f5dce6e7baaff5f708f48ca49d882f34a7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-e27f8d5f17a7ac2d0ffd8f5f8396de2577aac4bb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-60ab065efa18d01a80e8f99a8f9373ca9b16af46.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-d55f22da671babfe12ed6ef05830042e9e32ac52.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.5\77bf7cacf9cefe19dc105e5425d2eb1bb5285881\android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.5-daa6e098360b884e00f5964906b7e6f7b6c4e9c6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="C:\Users\Justin\AndroidStudioProjects\CorvallisReuseAndRepairDirectory\app\build\intermediates\pre-dexed\debug\classes-0a664116fb7f3a6773931b757a1861d54a429f0d.jar" />
+    </item>
+
+</items>
