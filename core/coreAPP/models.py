@@ -83,31 +83,6 @@ class RepBusiness(models.Model):
         return self.busName
 
 
-"""
-class BusItem(models.Model):
-    businesses = models.ForeignKey(Business)
-    items = models.ForeignKey(ReuseItem)
-    lastUpdate = models.DateTimeField('last updated', auto_now=True, blank=True)
-    def __str__(self):
-        return self.businesses.busName + "-" + self.items.itemName
-    class Meta:
-        verbose_name = "Reuse Business Item"
-        verbose_name_plural = "Reuse Business Items"
-"""
-
-
-
-"""
-class BusinessRepairItem(models.Model):
-    business = models.ForeignKey(Business)
-    repairItem = models.ForeignKey(RepairItem)
-    def __str__(self):
-        return self.business.busName +"-"+ self.repairItem.RepItemName
-    class Meta:
-        verbose_name = "Repair Business Item"
-        verbose_name_plural = "Repair Business Items"
-"""
-
 
 
 
