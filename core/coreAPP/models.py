@@ -2,7 +2,6 @@ import datetime
 from django.db import models
 from django.utils import timezone
 
-
 class UseCat(models.Model):
     catName = models.CharField('Category Name', max_length=200, unique=True)
     lastUpdate = models.DateTimeField('date updated', auto_now=True, blank=True)
@@ -21,8 +20,6 @@ class ReuseItem(models.Model):
     class Meta:
         verbose_name = "Reuse Item"
         verbose_name_plural = "Reuse Items"    
-
-
 
 class Business(models.Model):
     #items = models.ForeignKey(ReuseItem)
@@ -81,9 +78,3 @@ class RepBusiness(models.Model):
     lastUpdate = models.DateTimeField('last updated', auto_now=True, blank=True, null=True)
     def __str__(self):
         return self.busName
-
-
-
-
-
-

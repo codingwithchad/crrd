@@ -1,13 +1,12 @@
 from django.contrib import admin
-
 from .models import UseCat, ReuseItem, Business, RepCat, RepairItem, RepBusiness
-
 
 #Allows 4 text boxes to be displayed by default while adding items in Use Cat
 #more can be inserted within the browser
 class ReuseItemInline(admin.TabularInline):
 	model = ReuseItem
 	extra = 4
+
 #This allows the UseCat for the admin page
 #Category Name is on top and 4 text boxes for Item names are underneath
 #more text boxes can be added on the fly
@@ -50,17 +49,11 @@ class RepBusItemAdmin(admin.ModelAdmin):
 class RepBusAdmin(admin.ModelAdmin):
 	inlines = [repBusItemInline,] 
 	exclude = ('repairItem',)
-
-
-
 	
 # Register your models here.
-
 admin.site.register(UseCat, UseCatAdmin)
 admin.site.register(ReuseItem)
 admin.site.register(RepCat, RepCatAdmin)
 admin.site.register(RepairItem)
 admin.site.register(Business, busAdmin)
 admin.site.register(RepBusiness, RepBusAdmin)
-
-
