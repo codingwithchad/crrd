@@ -47,7 +47,7 @@ public class ReuseCatActivity extends ActionBarActivity implements AdapterView.O
 
         progDialog = new ProgressDialog(this);
         progDialog.setMessage("Fetching data");
-        progDialog.setCancelable(false);
+        progDialog.setCancelable(true);
 
         progDialog.show();
 

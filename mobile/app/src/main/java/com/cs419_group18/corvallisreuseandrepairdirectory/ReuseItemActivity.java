@@ -50,7 +50,7 @@ public class ReuseItemActivity extends ActionBarActivity implements AdapterView.
 
         progDialog = new ProgressDialog(this);
         progDialog.setMessage("Fetching data");
-        progDialog.setCancelable(false);
+        progDialog.setCancelable(true);
 
         progDialog.show();
 
@@ -84,7 +84,7 @@ public class ReuseItemActivity extends ActionBarActivity implements AdapterView.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_reuse_cat, menu);
+        getMenuInflater().inflate(R.menu.menu_reuse_item, menu);
         return true;
     }
 

@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/bgColor"
+    tools:context="com.cs419_group18.corvallisreuseandrepairdirectory.ReuseItemActivity">
+
+    <ListView
+        android:id="@+id/listview_reuseItem"
+        style="@style/listView" />
+
+</LinearLayout>
+<!-- From: file:/C:/Users/Justin/AndroidStudioProjects/CorvallisReuseAndRepairDirectory/app/src/main/res/layout/activity_reuse_item.xml -->

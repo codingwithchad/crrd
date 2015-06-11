@@ -1,8 +1,11 @@
 package com.cs419_group18.corvallisreuseandrepairdirectory;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -12,12 +15,28 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.JsonHttpResponseHandler;
+
+import org.apache.http.Header;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 
 public class ReuseBizDetailActivity extends ActionBarActivity implements OnMapReadyCallback {
     TextView bizNameTextView;
     TextView bizAddressTextView;
     TextView bizCityTextView;
+    TextView bizPhoneTextView;
+    TextView bizHoursTextView;
+    TextView bizWebsiteTextView;
+    String name;
+    double latitude = 0;
+    double longitude = 0;
+    private static final String BASE_URL = "http://52.26.111.76:8000/crrd/";
+    AsyncHttpClient client = new AsyncHttpClient();
+    String pk;      //DB primary key
+    ProgressDialog progDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +46,50 @@ public class ReuseBizDetailActivity extends ActionBarActivity implements OnMapRe
         bizNameTextView = (TextView) findViewById(R.id.reuseBizName);
         bizAddressTextView = (TextView) findViewById(R.id.reuseBizAddress);
         bizCityTextView = (TextView) findViewById(R.id.reuseBizCity);
-
-        bizNameTextView.setText("XYZ Business");
-        bizAddressTextView.setText("21 Jump St.");
-        bizCityTextView.setText("Corvallis");
+        bizPhoneTextView = (TextView) findViewById(R.id.reuseBizPhone);
+        bizHoursTextView = (TextView) findViewById(R.id.reuseBizHours);
+        bizWebsiteTextView = (TextView) findViewById(R.id.reuseBizWebsite);
 
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.reuseMap);
         mapFragment.getMapAsync(this);
+
+        pk = this.getIntent().getExtras().getString("pk");
+
+        progDialog = new ProgressDialog(this);
+        progDialog.setMessage("Fetching data");
+        progDialog.setCancelable(true);
+
+        progDialog.show();
+
+        // perform GET to do initial fill of the item listview
+        client.get(BASE_URL + pk + "/busdetail/", new JsonHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+                progDialog.dismiss();
+                JSONObject item, fields;
+                try {
+                    item = response.getJSONObject(0);
+                    fields = item.getJSONObject("fields");
+                    name = fields.getString("busName");
+                    bizNameTextView.setText(name);
+                    bizAddressTextView.setText(fields.getString("address1"));
+                    bizCityTextView.setText(fields.getString("city"));
+                    bizPhoneTextView.setText(fields.getString("phone1"));
+                    bizHoursTextView.setText(fields.getString("hours"));
+                    bizWebsiteTextView.setText(fields.getString("web"));
+                    latitude = fields.getDouble("latitude");
+                    longitude = fields.getDouble("longitude");
+                } catch (Exception ex) {
+                    Log.d("jh json exception", ex.getMessage());
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable error) {
+                progDialog.dismiss();
+                Log.d("jh item GET fail", responseString);
+            }
+        });
     }
 
     @Override
@@ -60,13 +116,28 @@ public class ReuseBizDetailActivity extends ActionBarActivity implements OnMapRe
 
     @Override
     public void onMapReady(GoogleMap map) {
-        map.addMarker(new MarkerOptions()
-                .position(new LatLng(44.559,-123.265))
-                .title("Corvallis Area"));
+        final GoogleMap newMap = map;
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (latitude != 0 && longitude != 0) {
+                    newMap.addMarker(new MarkerOptions()
+                            .position(new LatLng(latitude, longitude))
+                            .title(name));
+                }
+            }
+        }, 3000);
+
         map.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
             @Override
             public void onMapClick(LatLng latLng) {
-                startActivity(new Intent(ReuseBizDetailActivity.this, ReuseMapActivity.class));
+                Intent intent = new Intent(ReuseBizDetailActivity.this, ReuseMapActivity.class);
+                intent.putExtra("lat", latitude);
+                intent.putExtra("lng", longitude);
+                intent.putExtra("name", name);
+                startActivity(intent);
             }
         });
     }

@@ -13,6 +13,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 
 public class ReuseMapActivity extends ActionBarActivity implements OnMapReadyCallback {
+    double lat;
+    double lng;
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,10 @@ public class ReuseMapActivity extends ActionBarActivity implements OnMapReadyCal
 
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.reuseMap);
         mapFragment.getMapAsync(this);
+
+        lat = this.getIntent().getExtras().getDouble("lat");
+        lng = this.getIntent().getExtras().getDouble("lng");
+        name = this.getIntent().getExtras().getString("name");
     }
 
     @Override
@@ -47,8 +54,10 @@ public class ReuseMapActivity extends ActionBarActivity implements OnMapReadyCal
 
     @Override
     public void onMapReady(GoogleMap map) {
-        map.addMarker(new MarkerOptions()
-                .position(new LatLng(44.559,-123.265))
-                .title("Corvallis Area"));
+        if (lat != 0 && lng != 0) {
+            map.addMarker(new MarkerOptions()
+                    .position(new LatLng(lat, lng))
+                    .title(name));
+        }
     }
 }

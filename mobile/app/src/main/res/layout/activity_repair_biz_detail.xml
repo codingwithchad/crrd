@@ -1,12 +1,98 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.cs419_group18.corvallisreuseandrepairdirectory.RepairBizDetailActivity">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        style="@style/bgColor"
+        tools:context="com.cs419_group18.corvallisreuseandrepairdirectory.RepairBizDetailActivity">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/repairBizName"
+            android:textSize="30sp"
+            style="@style/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/repairBizAddress"
+            android:textSize="20sp"
+            style="@style/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:id="@+id/repairBizCity"
+            android:textSize="20sp"
+            style="@style/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:text="@string/header_map"
+            style="@style/headerText" />
+        <View style="@style/divider" />
+        <fragment android:id="@+id/repairMap"
+            tools:ignore="MissingPrefix"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:name="com.google.android.gms.maps.MapFragment"
+            map:liteMode="true"
+            map:cameraTargetLat="44.559"
+            map:cameraTargetLng="-123.265"
+            map:cameraZoom="11"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:text="@string/header_hours"
+            style="@style/headerText" />
+        <View style="@style/divider" />
+        <TextView
+            android:id="@+id/repairBizHours"
+            android:textSize="20sp"
+            style="@style/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="@string/header_phone"
+            style="@style/headerText" />
+        <View style="@style/divider" />
+        <TextView
+            android:id="@+id/repairBizPhone"
+            android:textSize="20sp"
+            style="@style/textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="@string/header_website"
+            style="@style/headerText" />
+        <View style="@style/divider" />
+        <TextView
+            android:id="@+id/repairBizWebsite"
+            android:textSize="20sp"
+            android:autoLink="web"
+            style="@style/linkColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

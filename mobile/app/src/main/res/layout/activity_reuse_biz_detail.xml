@@ -45,7 +45,7 @@
             map:liteMode="true"
             map:cameraTargetLat="44.559"
             map:cameraTargetLng="-123.265"
-            map:cameraZoom="10"
+            map:cameraZoom="11"
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_marginTop="10dp"
@@ -53,10 +53,10 @@
             android:layout_marginRight="20dp" />
 
         <TextView
-            android:text="M-F 9-5pm"
+            android:text="@string/header_hours"
             style="@style/headerText" />
         <View style="@style/divider" />
-        <TextView android:text="@string/header_hours"
+        <TextView
             android:id="@+id/reuseBizHours"
             android:textSize="20sp"
             style="@style/textColor"
@@ -66,10 +66,10 @@
             android:layout_marginTop="5dp" />
 
         <TextView
-            android:text="(555) 555-1234"
+            android:text="@string/header_phone"
             style="@style/headerText" />
         <View style="@style/divider" />
-        <TextView android:text="@string/header_hours"
+        <TextView
             android:id="@+id/reuseBizPhone"
             android:textSize="20sp"
             style="@style/textColor"
@@ -82,7 +82,7 @@
             android:text="@string/header_website"
             style="@style/headerText" />
         <View style="@style/divider" />
-        <TextView android:text="www.example.com"
+        <TextView
             android:id="@+id/reuseBizWebsite"
             android:textSize="20sp"
             android:autoLink="web"
