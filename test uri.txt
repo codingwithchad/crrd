@@ -1,3 +1,11 @@
 http://52.26.111.76:8000/crrd/usecat/
-http://52.26.111.76:8000/crrd/5/useitems/
-http://52.26.111.76:8000/crrd/5/business/
+http://52.26.111.76:8000/crrd/7/useitems/
+http://52.26.111.76:8000/crrd/27/business/
+
+http://52.26.111.76:8000/crrd/3/busdetail/
+
+http://52.26.111.76:8000/crrd/repcat/repair/
+http://52.26.111.76:8000/crrd/4/repitems/
+http://52.26.111.76:8000/crrd/6/repbusiness/
+
+http://52.26.111.76:8000/crrd/1/repbusdetail/
