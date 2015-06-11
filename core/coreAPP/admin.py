@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import UseCat, ReuseItem, BusItem, Business, RepCat, RepairItem, BusinessRepairItem
+#from .models import UseCat, ReuseItem, BusItem, Business, RepCat, RepairItem, BusinessRepairItem
+from .models import UseCat, ReuseItem, Business, RepCat, RepairItem, RepBusiness
 #from django.contrib.contenttypes.admin import GenericTabularInline
 
 #Allows 4 text boxes to be displayed by default while adding items in Use Cat
@@ -38,7 +39,8 @@ admin.site.register(UseCat, UseCatAdmin)
 admin.site.register(ReuseItem)
 admin.site.register(RepCat, RepCatAdmin)
 admin.site.register(RepairItem)
-admin.site.register(BusItem)
+#admin.site.register(BusItem)
 admin.site.register(Business)
-admin.site.register(BusinessRepairItem)
+admin.site.register(RepBusiness)
+#admin.site.register(BusinessRepairItem)
 
