@@ -37,7 +37,8 @@ class Business(models.Model):
     phone2 =  models.CharField(max_length=200, blank=True)
     email = models.EmailField(blank=True)
     web =  models.URLField(max_length=200, blank=True)
-    geolocal =  models.CharField(max_length=200, blank=True)
+    longitude =  models.CharField(max_length=200, blank=True)
+    latitude =  models.CharField(max_length=200, blank=True)
     hours =  models.CharField(max_length=200, blank=True)
     lastUpdate = models.DateTimeField('last updated', auto_now=True, blank=True, null=True)
     def __str__(self):
@@ -74,7 +75,8 @@ class RepBusiness(models.Model):
     phone2 =  models.CharField(max_length=200, blank=True)
     email = models.EmailField(blank=True)
     web =  models.URLField(max_length=200, blank=True)
-    geolocal =  models.CharField(max_length=200, blank=True)
+    longitude =  models.CharField(max_length=200, blank=True)
+    latitude =  models.CharField(max_length=200, blank=True)
     hours =  models.CharField(max_length=200, blank=True)
     lastUpdate = models.DateTimeField('last updated', auto_now=True, blank=True, null=True)
     def __str__(self):

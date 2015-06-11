@@ -18,7 +18,11 @@ def viewUseItems(request, catID):
     return HttpResponse(response)
 
 def viewBusiness(request, itemID):
-    response = serializers.serialize('json', Business.objects.filter(items=itemID))
+    response = serializers.serialize('json', Business.objects.filter(items=itemID), fields=('id', 'busName'))
+    return HttpResponse(response)
+
+def viewBusDetail(request, busID):
+    response = serializers.serialize('json', Business.objects.filter(id=busID))
     return HttpResponse(response)
 
 def viewRepCat(request):
@@ -30,7 +34,11 @@ def viewRepItems(request, repCatID):
     return HttpResponse(response)
 
 def viewRepairBusiness(request, repItemID):
-    response = serializers.serialize('json', RepBusiness.objects.filter(repairItem=repItemID))
+    response = serializers.serialize('json', RepBusiness.objects.filter(repairItem=repItemID), fields=('id', 'busName'))
+    return HttpResponse(response)
+
+def viewRepBusDetail(request, repBusID):
+    response = serializers.serialize('json', RepBusiness.objects.filter(id=repBusID))
     return HttpResponse(response)
 
 
