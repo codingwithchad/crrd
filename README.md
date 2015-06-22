@@ -1,0 +1,2 @@
+The Corvallis Reuse and Repair Directory App provides a directory where users can find an organization that will repair an item, or will accept their item for reuse. 
+The mobile app was created by Justin Hammar using Android Studio. The mobile app features Google Maps integration.  The back end and database was was created by Chad Glaser. The back end was created with Django, Python 3, with a sqlite database and is stored on an Amazon EC2 instance. 
