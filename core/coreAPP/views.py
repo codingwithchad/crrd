@@ -40,8 +40,3 @@ def viewRepairBusiness(request, repItemID):
 def viewRepBusDetail(request, repBusID):
     response = serializers.serialize('json', RepBusiness.objects.filter(id=repBusID))
     return HttpResponse(response)
-
-
-
-
-# Create your views here.
