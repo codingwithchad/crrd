@@ -1,7 +1,7 @@
 
 from django.test import TestCase
 
-from .models import UseCat, ReuseItem, Business, RepCat, RepairItem, RepBusiness
+#from .models import UseCat, ReuseItem, Business, RepCat, RepairItem, RepBusiness
 # Create your tests here.
 
 class urlTests(TestCase):
@@ -36,6 +36,8 @@ class urlTests(TestCase):
     def test_repBusDet(self):
         response = self.client.get("http://52.26.111.76:8000/crrd/1/repbusdetail/")
         self.assertEqual(response.status_code, 200)
+    
     def test_badUrl(self):
         response = self.client.get("http://52.26.111.76:8000/crrd/1/badUrl/")
         self.assertEqual(response.status_code, 404)
+
